@@ -6,7 +6,7 @@ export const products = [
     stock: 5,
     description: "Espresso clásico",
     category: "cafe",
-    img: "https://res.cloudinary.com/duxqgahbk/image/upload/v1678579355/espresso_xrpvxx.jpg",
+    img: "https://res.cloudinary.com/duxqgahbk/image/upload/v1678584347/espresso_xrpvxx.jpg",
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ export const products = [
     description:
       "Doble shot de espresso con tónica y rodaja de naranja, pomelo o limón",
     category: "cafeFrio",
-    img: "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562408/espressoTonic_tgewm5.jpg",
+    img: "https://res.cloudinary.com/duxqgahbk/image/upload/v1678584707/espressoTonic_yhnhzg.jpg",
   },
   {
     id: 7,
@@ -80,7 +80,7 @@ export const products = [
     price: 700,
     stock: 5,
     description:
-      "(BANANA, FRUTILLA, FRUTOS ROJOS, MANGO, MARACUYA) al agua o con leche",
+      "Banana, Frutilla, Frutos rojos, Mango o Maracuya (al agua o con leche)",
     category: "bebidas",
     img: "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562419/licuado_rccsdu.jpg",
   },
