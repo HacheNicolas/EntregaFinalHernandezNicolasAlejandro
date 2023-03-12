@@ -6,7 +6,7 @@ export const products = [
     stock: 5,
     description: "Espresso clásico",
     category: "cafe",
-    img: "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562398/espresso_mlsuwo.jpg",
+    img: "https://res.cloudinary.com/duxqgahbk/image/upload/v1678579355/espresso_xrpvxx.jpg",
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ export const products = [
     description:
       "Doble shot de espresso con tónica y rodaja de naranja, pomelo o limón",
     category: "cafeFrio",
-    img: "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562403/espressoTonic_w6hahr.jpg",
+    img: "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562408/espressoTonic_tgewm5.jpg",
   },
   {
     id: 7,
