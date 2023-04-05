@@ -1,30 +1,31 @@
 import { Stack, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const NavBarList = () => {
+const NavBarList = ({ categoryList }) => {
   return (
     <Stack spacing={2} direction="row">
-      <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-        <Button variant="Text">Todo</Button>
-      </Link>
-      <Link
-        to="/category/cafe"
-        style={{ textDecoration: "none", color: "black" }}
-      >
-        <Button variant="Text">Café</Button>
-      </Link>
-      <Link
-        to="/category/cafeFrio"
-        style={{ textDecoration: "none", color: "black" }}
-      >
-        <Button variant="Text">Café Frio</Button>
-      </Link>
-      <Link
-        to="/category/bebidas"
-        style={{ textDecoration: "none", color: "black" }}
-      >
-        <Button variant="Text">Bebidas</Button>
-      </Link>
+      {categoryList?.map((category) => {
+        if (category.path === "/") {
+          return (
+            <Link
+              key={category.id}
+              to={category.path}
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <Button variant="Text">{category.title}</Button>
+            </Link>
+          );
+        }
+        return (
+          <Link
+            key={category.id}
+            to={`category/${category.path}`}
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <Button variant="Text">{category.title}</Button>
+          </Link>
+        );
+      })}
     </Stack>
   );
 };

@@ -28,9 +28,6 @@ const Item = ({ element }) => {
         <Typography gutterBottom variant="h5" component="div">
           {element.title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {element.description}
-        </Typography>
       </CardContent>
       <CardActions className={styles.button}>
         <Link to={`/item/${element.id}`} style={{ textDecoration: "none" }}>

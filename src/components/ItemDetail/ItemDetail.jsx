@@ -2,13 +2,11 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import styles from "./ItemDetail.module.css";
-import { Link } from "react-router-dom";
-import ItemCount from "../ItemCount/ItemCount";
+import ItemCountContainer from "../ItemCountContainer/ItemCountContainer";
 
-const ItemDetail = ({ product, onAdd }) => {
+const ItemDetail = ({ product, onAdd, quantity }) => {
   return (
     <div className={styles.itemDetailBackground}>
       <div className={styles.itemDetail}>
@@ -36,7 +34,11 @@ const ItemDetail = ({ product, onAdd }) => {
             </Typography>
           </CardContent>
           <CardActions className={styles.button}>
-            <ItemCount stock={product.stock} onAdd={onAdd} />
+            <ItemCountContainer
+              stock={product.stock}
+              initial={quantity}
+              onAdd={onAdd}
+            />
           </CardActions>
         </Card>
       </div>

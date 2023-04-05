@@ -1,6 +1,6 @@
 import CartWidget from "../CartWidget/CartWidget";
 import styles from "./NavBar.module.css";
-import NavBarList from "./NavBarList";
+import NavBarListContainer from "./NavBarListContainer";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -13,7 +13,7 @@ const NavBar = () => {
           alt="Logo Ethiopia"
         />
       </Link>
-      <NavBarList />
+      <NavBarListContainer />
       <CartWidget />
     </div>
   );

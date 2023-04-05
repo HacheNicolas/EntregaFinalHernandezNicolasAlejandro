@@ -1,25 +1,6 @@
 import { Stack, Button } from "@mui/material";
-import { useState } from "react";
 
-const ItemCount = ({ stock, initial = 1, onAdd }) => {
-  const [counter, setCounter] = new useState(initial);
-
-  const add = () => {
-    console.log("suma");
-    console.log(counter);
-    console.log(stock);
-    if (counter < stock) {
-      setCounter(counter + 1);
-    }
-  };
-
-  const substract = () => {
-    if (counter > 1) {
-      setCounter(counter - 1);
-      console.log("resta");
-    }
-  };
-
+const ItemCount = ({ onAdd, add, substract, counter = 1 }) => {
   return (
     <div>
       <Stack spacing={0} direction="row">
